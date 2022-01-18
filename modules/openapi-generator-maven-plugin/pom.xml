@@ -2,10 +2,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.openapitools</groupId>
+        <groupId>es.startuphero</groupId>
         <artifactId>openapi-generator-project</artifactId>
         <!-- RELEASE_VERSION -->
-        <version>5.4.0-SNAPSHOT</version>
+        <version>5.3.1.1</version>
         <!-- /RELEASE_VERSION -->
         <relativePath>../..</relativePath>
     </parent>
@@ -51,7 +51,7 @@
             <version>3.4</version>
         </dependency>
         <dependency>
-            <groupId>org.openapitools</groupId>
+            <groupId>es.startuphero</groupId>
             <artifactId>openapi-generator</artifactId>
             <version>${project.version}</version>
         </dependency>

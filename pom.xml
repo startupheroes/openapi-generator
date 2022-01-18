@@ -6,12 +6,12 @@
         <relativePath/><!-- lookup parent from repository -->
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.openapitools</groupId>
+    <groupId>es.startuphero</groupId>
     <artifactId>openapi-generator-project</artifactId>
     <packaging>pom</packaging>
     <name>openapi-generator-project</name>
     <!-- RELEASE_VERSION -->
-    <version>5.4.0-SNAPSHOT</version>
+    <version>5.3.1.1</version>
     <!-- /RELEASE_VERSION -->
     <url>https://github.com/openapitools/openapi-generator</url>
     <scm>
@@ -66,14 +66,15 @@
         <url>https://github.com/openapitools/openapi-generator/issues</url>
     </issueManagement>
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>releases</id>
+            <url>http://nexus.startuphero.es/repository/maven-releases/</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://nexus.startuphero.es/repository/maven-snapshots/</url>
+            <uniqueVersion>false</uniqueVersion>
+        </snapshotRepository>
     </distributionManagement>
     <licenses>
         <license>
@@ -1519,8 +1520,8 @@
                 <module>modules/openapi-generator</module>
                 <module>modules/openapi-generator-cli</module>
                 <module>modules/openapi-generator-maven-plugin</module>
-                <module>modules/openapi-generator-gradle-plugin</module>
-                <module>modules/openapi-generator-online</module>
+<!--                <module>modules/openapi-generator-gradle-plugin</module>-->
+<!--                <module>modules/openapi-generator-online</module>-->
             </modules>
         </profile>
     </profiles>
